@@ -1,6 +1,8 @@
 import './Home.css'
 
-import { Container, Card, CardBody, CardTitle, } from "react-bootstrap";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Container, Card, CardBody, Button, Row, Col } from "react-bootstrap";
 
 function Home (){
 
@@ -11,8 +13,12 @@ function Home (){
 
                 <Card style={{ width: '25rem', height: '20rem' }}>
                     
-                    <CardBody>
-                        <CardTitle>Log in</CardTitle>
+                    <CardBody fluid className="d-flex justify-content-center align-items-center vh-100">
+                        <Row>
+                            <Col><Button>Menu</Button></Col>
+                            <Col><Button>Stores</Button></Col>
+                            <Col><Button>Cart</Button></Col>
+                        </Row>
                     </CardBody>
 
                 </Card>
