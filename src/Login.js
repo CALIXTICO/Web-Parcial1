@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container, Row, Form, Button} from "react-bootstrap";
+import { Container, Row, Form, Button, Image} from "react-bootstrap";
 
 function Login() 
 {
@@ -20,19 +20,25 @@ function Login()
     return(
         <Container fluid  className="vh-100">
             <Row>
-                <Container style={{width: '60%', backgroundColor: '#f8f2f2'}}></Container>
+                <Container style={{width: '60%', backgroundColor: '#f8f2f2'}}>
+                    <Container className="text-center" style={{height: '30%'}}>
+                        <Row><h1 style= {{color: "#233d3e"}}>TOO GOOD TO GO</h1></Row>
+                        <Row><h3 style= {{color: "#fe8166"}}>FOOD WAISTING SOLUTION</h3></Row>
+                    </Container>
+                    <Image src="/fondoLogin.jpeg" style={{height: '70%'}}/>
+                </Container>
+
+
                 <Container className="d-flex align-items-center justify-content-center vh-100" style={{width: '40%', backgroundColor: '#233d3e'}}>
                     <Form>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Username</Form.Label>
                                 <Form.Control type="email" placeholder="Username" />
                                 <Form.Text className="text-muted"></Form.Text>
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" placeholder="Password" onChange={handlePasswordChange} value={valorPassword}/>
-                                <Form.Text className="text-muted">Forgot Password? </Form.Text>
+                                <Form.Text style= {{color: "white"}}>Forgot Password? </Form.Text>
                             </Form.Group>
 
                             <Button style={{ width: '10rem', backgroundColor: 'white'}} onClick={clickLogIn}>

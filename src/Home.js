@@ -1,10 +1,27 @@
 import './Home.css'
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 import { Container, Card, CardBody, Button, Row, Col } from "react-bootstrap";
 
 function Home (){
+
+    const navegar = useNavigate();
+
+    function navegacionMenu()
+    {
+        navegar("menu");
+    }
+
+    function navegacionCart()
+    {
+        navegar("cart");
+    }
+
+    function navegacionStores()
+    {
+        navegar("stores");
+    }
 
     return(
         <Container className="fondo" >
@@ -15,9 +32,9 @@ function Home (){
                     
                     <CardBody fluid className="d-flex justify-content-center align-items-center vh-100">
                         <Row>
-                            <Col><Button>Menu</Button></Col>
-                            <Col><Button>Stores</Button></Col>
-                            <Col><Button>Cart</Button></Col>
+                            <Col><Button onClick={navegacionMenu}>Menu</Button></Col>
+                            <Col><Button onClick={navegacionStores}>Stores</Button></Col>
+                            <Col><Button onClick={navegacionCart}>Cart</Button></Col>
                         </Row>
                     </CardBody>
 

@@ -16,7 +16,7 @@ function Cart (){
     return(
         <Container>
             <Row>
-                <Navbar bg="dark" variant="dark"><h1 style={{color: 'white'}}>Stores</h1></Navbar>
+                <Navbar bg="dark" variant="dark"><h1 style={{color: 'white'}}>Cart</h1></Navbar>
             </Row>
 
             <Row>
