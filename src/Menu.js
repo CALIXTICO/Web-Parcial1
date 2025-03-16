@@ -2,7 +2,10 @@ import { useState, useEffect } from "react"
 
 import { Container, Navbar, Carousel, Row, Column, Card} from "react-bootstrap"
 
+import { FormattedMessage } from "react-intl";
+
 import CartaComida from './CartaComida';
+
 
 function Menu (){
 
@@ -16,7 +19,7 @@ function Menu (){
     return(
         <Container>
             <Row>
-                <Navbar bg="dark" variant="dark"><h1 style={{color: 'white'}}>Menu</h1></Navbar>
+                <Navbar bg="dark" variant="dark"><h1 style={{color: 'white'}}><FormattedMessage id= "BotonMenu"/></h1></Navbar>
             </Row>
 
             <Row>

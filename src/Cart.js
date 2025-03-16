@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 
+import { FormattedMessage } from "react-intl";
+
 import { Container, Navbar, Carousel, Row, Column, Card} from "react-bootstrap"
 
 import CartaComida from './CartaComida';
@@ -16,7 +18,7 @@ function Cart (){
     return(
         <Container>
             <Row>
-                <Navbar bg="dark" variant="dark"><h1 style={{color: 'white'}}>Cart</h1></Navbar>
+                <Navbar bg="dark" variant="dark"><h1 style={{color: 'white'}}><FormattedMessage id= "BotonCart"/></h1></Navbar>
             </Row>
 
             <Row>

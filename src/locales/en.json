@@ -1,0 +1,13 @@
+{
+    "TituloLogin": "TOO GOOD TO GO",
+    "SubtituloLogin": "FOOD WAISTING SOLUTION",
+    "Username": "Username",
+    "Password": "Password",
+    "ForgotPassword": "Forgot Password?",
+    "Login": "Log in",
+    "AlertPassword": "Password must be between 5 and 8 characters.",
+
+    "BotonMenu": "Menu",
+    "BotonStores": "Stores",
+    "BotonCart": "Cart"
+}

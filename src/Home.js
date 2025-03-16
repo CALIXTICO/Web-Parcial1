@@ -1,8 +1,11 @@
 import './Home.css'
 
+import { FormattedMessage } from "react-intl";
+
 import {useNavigate} from "react-router-dom";
 
 import { Container, Card, CardBody, Button, Row, Col } from "react-bootstrap";
+
 
 function Home (){
 
@@ -32,9 +35,9 @@ function Home (){
                     
                     <CardBody fluid className="d-flex justify-content-center align-items-center vh-100">
                         <Row>
-                            <Col><Button onClick={navegacionMenu}>Menu</Button></Col>
-                            <Col><Button onClick={navegacionStores}>Stores</Button></Col>
-                            <Col><Button onClick={navegacionCart}>Cart</Button></Col>
+                            <Col><Button onClick={navegacionMenu}><FormattedMessage id= "BotonMenu"/></Button></Col>
+                            <Col><Button onClick={navegacionStores}><FormattedMessage id= "BotonStores"/></Button></Col>
+                            <Col><Button onClick={navegacionCart}><FormattedMessage id= "BotonCart"/></Button></Col>
                         </Row>
                     </CardBody>
 

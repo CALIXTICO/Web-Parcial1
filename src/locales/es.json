@@ -1,0 +1,13 @@
+{
+    "TituloLogin": "DEMASIADO BUENO PARA BOTAR",
+    "SubtituloLogin": "SOLUCIÓN AL DESPERDICIO DE COMIDA",
+    "Username": "Usuario",
+    "Password": "Contraseña",
+    "ForgotPassword": "Olvidaste tu Contraseña?",
+    "Login": "Inicia Sesión",
+    "AlertPassword": "La contraseña debe tener entre 5 y 8 caracteres.",
+
+    "BotonMenu": "Menu",
+    "BotonStores": "Tiendas",
+    "BotonCart": "Carrito"
+}
